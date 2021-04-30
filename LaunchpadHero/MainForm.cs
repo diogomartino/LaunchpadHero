@@ -80,34 +80,42 @@ namespace LaunchpadHero
 
         private void ForceClearAllLeds()
         {
-            for(int x = 0;x < 8; x++)
+            try
             {
-                for(int y = 0; y < 8; y++)
+                for (int x = 0; x < 8; x++)
                 {
-                    lint.setLED(x, y, 0);
+                    for (int y = 0; y < 8; y++)
+                    {
+                        lint.setLED(x, y, 0);
+                    }
                 }
-            }
 
-            lint.setTopLED(TopLEDs.Up, 0);
-            lint.setTopLED(TopLEDs.Down, 0);
-            lint.setTopLED(TopLEDs.Session, 0);
+                lint.setTopLED(TopLEDs.Up, 0);
+                lint.setTopLED(TopLEDs.Down, 0);
+                lint.setTopLED(TopLEDs.Session, 0);
+            }
+            catch { }
         }
 
         private void ForceLightAllLeds()
         {
-            int color = new Random().Next(1, 128);
-
-            for (int x = 0; x < 8; x++)
+            try
             {
-                for (int y = 0; y < 8; y++)
-                {
-                    lint.setLED(x, y, color);
-                }
-            }
+                int color = new Random().Next(1, 128);
 
-            lint.setTopLED(TopLEDs.Up, color);
-            lint.setTopLED(TopLEDs.Down, color);
-            lint.setTopLED(TopLEDs.Session, color);
+                for (int x = 0; x < 8; x++)
+                {
+                    for (int y = 0; y < 8; y++)
+                    {
+                        lint.setLED(x, y, color);
+                    }
+                }
+
+                lint.setTopLED(TopLEDs.Up, color);
+                lint.setTopLED(TopLEDs.Down, color);
+                lint.setTopLED(TopLEDs.Session, color);
+            }
+            catch { }
         }
 
         private void ConnectLaunchpad(int index)
