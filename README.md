@@ -1,5 +1,6 @@
 # LaunchpadHero
 A program that allows you to use your Novation Launchpad to play Clone Hero. (only tested on Novation Launchpad MK2, but I think it will work on any Launchpad)
+[Youtube Video](https://www.youtube.com/watch?v=ch3QJl_ZaEo)
 
 ![Program](https://i.imgur.com/UQOjn9V.png)
 ![Launchpad](https://i.imgur.com/BHW3CKT.jpg)
