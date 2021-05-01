@@ -30,6 +30,7 @@ namespace LaunchpadHero
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainForm));
             this.metroStyleManager1 = new MetroFramework.Components.MetroStyleManager(this.components);
             this.devicesComboBox = new MetroFramework.Controls.MetroComboBox();
             this.metroLabel1 = new MetroFramework.Controls.MetroLabel();
@@ -277,6 +278,7 @@ namespace LaunchpadHero
             this.Controls.Add(this.testButton);
             this.Controls.Add(this.metroLabel1);
             this.Controls.Add(this.devicesComboBox);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "MainForm";
             this.Resizable = false;
             this.Text = "Launchpad Hero";

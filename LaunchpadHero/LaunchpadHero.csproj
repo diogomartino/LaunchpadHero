@@ -32,6 +32,9 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>launchpad.ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="launchpad-dot-net">
       <HintPath>dll\launchpad-dot-net.dll</HintPath>
@@ -105,6 +108,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="launchpad.ico" />
     <Content Include="MetroFramework.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
